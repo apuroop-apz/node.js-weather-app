@@ -4,7 +4,7 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const geocode = require('./controllers/geocode');
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.set('view engine', 'ejs');
