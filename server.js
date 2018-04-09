@@ -4,6 +4,7 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const geocode = require('./controllers/geocode');
+const port = process.env.PORT || 5001;
 
 app.use(cors());
 app.set('view engine', 'ejs');
@@ -38,8 +39,8 @@ app.post('/', (req, res) => {
     });
 });
 
-app.listen('5001', () => {
-    console.log("Application running on http://localhost:5001/");
+app.listen(port, () => {
+    console.log(`Application started on port: ${port}`);
 });
 
 module.exports = app;
