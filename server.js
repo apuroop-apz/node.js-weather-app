@@ -30,8 +30,8 @@ app.post('/', (req, res) => {
                     res.json(err);
                 } else {
                     res.render("details", {
-                        item : result, //used in details.ejs
-                        item1 : result1, //used in details.ejs
+                        item : result, // used in details.ejs
+                        item1 : result1 // used in details.ejs
                     });
                 }
             });
