@@ -32,7 +32,6 @@ app.post('/', (req, res) => {
                     res.render("details", {
                         item : result, //used in details.ejs
                         item1 : result1, //used in details.ejs
-                        port1: port
                     });
                 }
             });
