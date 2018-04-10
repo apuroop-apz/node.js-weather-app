@@ -16,9 +16,7 @@ module.exports.geocodeAddress = (inputAddress, callback) => {
             callback(undefined, {
                 Address: body.results[0].formatted_address,
                 Latitude: body.results[0].geometry.location.lat,
-                Longitude: body.results[0].geometry.location.lng,
-                City: body.results[0].address_components[1].short_name,
-                State: body.results[0].address_components[3].long_name
+                Longitude: body.results[0].geometry.location.lng
             });
         }
     });
